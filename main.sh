@@ -8,6 +8,8 @@ cd gtklock
 git checkout v2.1.0
 cp -rvf ../debian ./
 
+sed -e 's /usr/local /usr g' -i makefile
+
 # Get build deps
 apt-get build-dep ./ -y
 
