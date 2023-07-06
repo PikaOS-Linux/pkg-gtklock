@@ -15,7 +15,8 @@ Build-Depends: debhelper-compat (= 13),
                libwayland-client0,
                wayland-protocols,
                libpam-dev,
-	             libxml2-utils,
+	       libxml2-utils,
+               scdoc,
 Rules-Requires-Root: no
 
 Package: gtklock
