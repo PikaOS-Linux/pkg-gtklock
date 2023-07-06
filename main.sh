@@ -3,9 +3,10 @@
 DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
-mkdir -p ./src-pkg-name
-cp -rvf ./debian ./src-pkg-name/
-cd ./src-pkg-name/
+git clone https://github.com/jovanlanik/gtklock.git --recurse-submodules
+cd gtklock
+git checkout v2.1.0
+cp -rvf ../debian ./
 
 # Get build deps
 apt-get build-dep ./ -y
